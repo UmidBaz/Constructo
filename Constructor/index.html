@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Constructor</title>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" 
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" 
+  crossorigin="anonymous"></script>
+  <link href="cssCON.css" rel="stylesheet">
+  <script src="Gradient.js" ></script>
+  <script src="jqSignUp.js" ></script>
+
+</head>
+<body>
+  <div class = "background">
+    <canvas id="gradient-canvas"></canvas>
+    <script>
+        var gradient = new Gradient()
+        gradient.initGradient('#gradient-canvas');
+    </script>
+  </div>
+  <div id = "login">
+    <form>
+      <h3>Login Here</h3>
+  
+      <label for="username">Username</label>
+      <input type="text" placeholder="Username, Email or Phone" id="username">
+  
+      <label for="password">Password</label>
+      <input type="password" placeholder="Password" id="password">
+  
+      <button>Log In</button>
+      <label class = signUpHere>Don't Have an account, <a id = "signHere">Sign Up Here!</a> </label>
+  
+    </form>
+  </div>
+</body>
+</html>
